@@ -14,7 +14,7 @@
     - use '\d <table name>' for show table structure 
     
 ## Connetion in MySQlServer ( Default port: 3306 )
-    - if necessary run "docker compose up".
+- if necessary run "docker compose up".
 ```
 version: '3.1'
 
