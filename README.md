@@ -12,7 +12,7 @@
 - and use 'psql <database name>' for access database
     - use '\dt' for show all tables on database
     - use '\d <table name>' for show table structure 
-    
+
 ## Connetion in MySQlServer ( Default port: 3306 )
 - if necessary run "docker compose up".
 ```
