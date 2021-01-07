@@ -12,3 +12,24 @@
 - and use 'psql <database name>' for access database
     - use '\dt' for show all tables on database
     - use '\d <table name>' for show table structure 
+    
+## Connetion in MySQlServer ( Default port: 3306 )
+    - if necessary use "service mysql start" before the login ".
+```
+version: '3.1'
+
+services:
+  
+  db:
+    image: mysql
+    container_name: mysql-container
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_DATABASE: db_test
+    volumes: 
+      - /var/lib/mysql
+    ports:
+      - '8080:3306'
+  ```
